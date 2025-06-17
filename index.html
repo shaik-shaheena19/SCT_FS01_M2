@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="stopwatch-box">
+      <h1 class="title">Stopwatch</h1>
+      <div class="timer" id="timer">00:00:00</div>
+      <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+        <button onclick="recordLap()">Lap</button>
+        <button onclick="clearLaps()">Clear Laps</button>
+      </div>
+      <h3 class="lap-title">Lap Times:</h3>
+      <ul class="lap-list" id="lapList"></ul>
+
+      <button class="toggle-btn" onclick="toggleMode()">
+        <span id="modeEmoji">🌙</span>
+        <i id="modeIcon" class="fas fa-moon"></i> Toggle Mode
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
